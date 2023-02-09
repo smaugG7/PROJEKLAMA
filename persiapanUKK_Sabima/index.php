@@ -54,7 +54,7 @@ if  (isset($_GET['page'])){
 
 <footer class="footer py-2 bg-light">
     <div class="container">
-        <p class=" text-center">UKK RPL 2023 | Nama Peserta | Nama Sekolah</p>   
+        <p class=" text-center">UKK RPL 2023 | Sabima Maulana Putra | SMK Wira Harapan</p>   
     </div>
 </footer>
 

@@ -1,7 +1,8 @@
 <?php
-
+session_start();
 include '../layouts/header.php';
 if  (isset($_GET['page'])){
+    
     $page=$_GET['page'];
 
     switch ($page) {

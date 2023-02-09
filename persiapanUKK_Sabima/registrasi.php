@@ -25,9 +25,9 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">No. Telp</label>
-                        <input type="number" class="form-control" name="nik" placeholder="Masukan No.Telp" required>
+                        <input type="number" class="form-control" name="telp" placeholder="Masukan No.Telp" required>
                     </div>
-            </div>  
+            </div>
             <div class="card-footer">
                 <button type="submit" name="kirim" class="btn btn-primary">Daftar</button>
                 <a href="index.php?page=login" Class="m-3">Sudah Punya Akun? Login Disini</a>
@@ -36,3 +36,23 @@
         </div>
     </div>
 </div>
+
+<?php
+include 'config/koneksi.php';
+if(isset($_POST['kirim'])){
+    $nik = $_POST['nik'];
+    $nama = $_POST['nama'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $telp = $_POST['telp']; 
+    $level = 'masyarakat';
+
+    $query = mysqli_query($koneksi, "INSERT INTO masyarakat VALUES ('$nik','$nama','$username','$password','$telp','$level')");
+    // $query = mysqli_query($koneksi, "INSERT INTO `masyarakat`(`nik`, `nama`, `username`, `password`, `telp`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')");
+
+    if ($query){
+        header('location:index.php?page=login');
+    }
+}
+
+?>

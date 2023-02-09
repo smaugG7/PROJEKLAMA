@@ -5,7 +5,7 @@
                 LOGIN
             </div>
             <div class="card-body">
-                <form action="" method="POST">
+                <form action="config/aksi_login.php" method="POST">
                     <div class="mb-3">
                         <label class="form-label">Username</label>
                         <input type="text" class="form-control" name="username" placeholder="Masukan Username" required>
@@ -14,6 +14,13 @@
                         <label class="form-label">Password</label>
                         <input type="password" class="form-control" name="password" placeholder="Masukan Password" required>
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label">Login Sebagai</label>
+                        <select class="form-control"name="level">
+                            <option value="masyarakat">masyarakat</option>
+                            <option value="petugas">petugas</option>
+                        </select>
+            </div>  
             </div>  
             <div class="card-footer">
                 <button type="submit" name="kirim" class="btn btn-primary">Login</button>

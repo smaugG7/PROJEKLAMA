@@ -1,9 +1,9 @@
 <div class="container">
-<div class="row">
+    <div class="row">
         <div class="col-md-12" mt-3>
             <div class="card">
                 <div class="card-header">
-                     TANGGAPAN
+                    TANGGAPAN
                 </div>
                 <div class="card-body">
                     <form action="" method="POST">
@@ -17,7 +17,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Foto</label>
-                            <img src="" class="form-control" style="witdh: 150px;">
+                            <img src="" class="form-control" style="width: 150px;">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Tanggapan</label>
@@ -32,4 +32,4 @@
 
         </div>
     </div>
-    </div>
+</div>
